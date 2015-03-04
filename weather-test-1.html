@@ -1,0 +1,958 @@
+
+
+
+
+
+
+ 
+  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <title>Offshore Waters Forecast (Caribbean/SW Atlantic)</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+ <meta http-equiv="Expires" content="Wed, 4 Mar 2015 18:16:35 UTC">
+
+
+  <link href="/main.css" type="text/css" rel="stylesheet">
+   
+   <!-- Set up the top banners -->
+   <style type="text/css">
+   <!--
+    .body
+    {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+    }
+    -->
+
+   <!--
+   .topbanner_780
+   {
+   background-image:url('/gifs/topbanner_780.jpg'); height:19px;
+   }
+   -->
+
+   <!--
+   .topbanner_1132
+   {
+   background-image:url('/gifs/topbanner_1132.jpg'); height:19px;
+   }
+   -->
+    
+   <!--
+   .ncep_bkgrnd
+   {
+   background-image:url('/gifs/ncep_bkgrnd.jpg');
+   }
+   -->
+
+   <!--
+   .navbkgrnd
+   {
+   background-image:url('/gifs/navbkgrnd.gif');
+   }
+   -->
+   </style>
+</head>
+
+<!-- Set the main background image (background will have the NWS vertical logo) -->
+<!-- Use a different image if the page contents has a large graphic -->
+
+<body background="/gifs/800_navbar.gif" class="body" onLoad="if (self != top) top.location = self.location">
+
+
+
+<!-- include Google Analytics tracking -->
+<!-- BEGIN Google Analytics code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49829254-1', 'noaa.gov');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+<!-- END Google Analytics code -->
+
+
+<!-- Now load the correct standard NHC header, based on page contents -->
+
+ <!-- Begin NHC standard header -->
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td colspan="2" align="left" class="topbanner_780">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links" src="/gifs/skipgraphic.gif" width="1" border="0"></a>
+    </td>
+    <td colspan="2" align="right" width="100%" class="ncep_bkgrnd">
+      <a href="http://www.weather.gov/"><span class="link">weather.gov</span></a>&nbsp;&nbsp;&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="3"><a href="http://www.noaa.gov/"><img height="78" alt="NOAA logo - Click to go to the NOAA homepage" src="/gifs/noaaleft.jpg" width="85" border="0"></a></td>
+    <td align="left"><img height="20" alt="National Weather Service" src="/gifs/nwstitle_780.jpg" width="607" border="0"></td>
+    <td rowspan="3" width="100%" class="ncep_bkgrnd">&nbsp;</td>
+    <td rowspan="3" align="right"><a href="http://www.weather.gov/"><img height="78" alt="NWS logo - Click to go to the NWS homepage" src="/gifs/nwsright.gif" width="85" border="0"></a></td>
+  </tr>
+  <tr>
+    <!-- Put your Center's header image here -->
+    <td align="left"><a href="/"><img height="58" alt="National Hurricane Center" src="/gifs/nhc_officename_780.jpg" width="607" border="0"></a></td>
+  </tr>
+</table>
+
+<!-- Begin Home, Public Affairs, Organization links and search engine code-->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" class="navbkgrnd">
+<tr>
+ <td align="left" valign="top" width="94"><img src="/gifs/navbarleft.jpg" alt="" width="94" height="23" border="0"></td>
+ <td class="nav" id="menuitem" width="15%" align="center" nowrap="nowrap"><a href="/" class="navbar">Home</a></td>
+ <td class="nav" width="15%" align="right"><a href="http://www.weather.gov/pa/" class="navbar">News</a></td>
+ <td class="nav" width="20%" align="right"><a href="http://www.weather.gov/organization.php" class="navbar">Organization</a></td>
+ <td width="20%">&nbsp;</td>
+ <td align="right" class="searchinput "valign="top" width="20%" nowrap="nowrap">
+    <!-- Begin search code -->
+      <form method="get" action="http://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+        <input type="hidden" name="v:project" value="firstgov">
+        <label for="query" class="yellow">Search&nbsp;&nbsp;</label>
+        <input type="text" name="query" id="query">
+        <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws">
+        <label for="nws" class="yellow">NWS</label>
+        <input type="radio" name="affiliate" value="noaa.gov" id="noaa">
+        <label for="noaa" class="yellow">All NOAA</label>
+        <input type="submit" value="Go">
+      </form>
+   <!-- End search code -->
+</td>
+<!-- End search engine code -->
+
+<td align="right" valign="bottom" width="24"><img src="/gifs/navbarendcap_round.jpg" alt="" width="24" height="23" border="0"></td>
+</tr>
+</table>
+<!-- End Home, Public Affairs, Organization links and search engine code -->
+
+<!-- End NHC standard header -->
+
+
+
+
+<!-- Create main table for the page (has sidebar & the page contents) -->
+<table cellSpacing="0" cellPadding="1" width="760" border="0"> <!-- was 730 -->
+  <tbody>
+   <tr valign="top">
+    <!-- Set the width of the left-side navigation bar -->
+    <td width="140">
+ 
+    <!-- Now load the standard NHC left sidebar menu (top) -->   
+    <!-- Begin NHC standard left sidebar menu top -->
+<table bgcolor="#09248b" cellspacing="0" cellpadding="2" width="130" border="0">
+  <tbody>
+  <!-- Nationwide City,St/ZIP search -->
+    <tr align="left" valign="top">
+    <td class="searchinput" colSpan="2">
+      <div ID="Layer2" STYLE="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">
+       Search by city or zip code. Press enter or select the go button to submit request</div>
+      <form method="POST" action="http://forecast.weather.gov/zipcity.php" style="margin-bottom:2px;">
+      <span class="yellow">Local forecast by<br>&quot;City, St&quot; or &quot;ZIP&quot;</span><br>
+      <!-- <input type="text" name="inputstring" size="8" value="City, St" onFocus="if(this.value=='City, St')this.value='';">&nbsp; -->
+      <input class="searchinput" type="text" name="inputstring" size="10" value="" onFocus="this.value='';">&nbsp;
+      <input class="searchinput" type="submit" name="Go2" value="Go">
+    </form>
+    </td>
+    </tr>
+
+<!-- Old Local Search, disabled 25 January 2006
+    <tr>
+    <td class="searchinput" align="left" colspan="2">
+    <form action="http://www.firstgov.gov/fgsearch/index.jsp" name="query" style="margin-bottom:0;">
+    <label for="search"><span class="yellow">Search TPC</span></label>
+    <input type="hidden" name="parsed" value="true">
+    <input type="hidden" name="rn" value="3">
+    <input type="hidden" name="in0" value="domain">
+    <input type="hidden" name="dom0" value="nhc.noaa.gov">
+    <input type="text" name="mw0" id="search" size="12" maxlength="256" value="TPC Search" onFocus="this.value='';">&nbsp;&nbsp;<input type="submit" name="Go2" value="Go">
+    </td>
+    </tr>
+    </form>
+-->
+
+<!-- End standard NHC left sidebar menu top -->
+
+
+
+    <!-- Add a link for Text-only pages -->
+   <tr><td class="white" colspan="2">
+      <span class="yellow">Alternate Formats</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="?text" class="navbar"><b>Text</b></a> &nbsp; &nbsp; | &nbsp; <a href="/mobile/" class="navbar">Mobile</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/signup.shtml" class="navbar">Email</a> &nbsp; | &nbsp; <a href="/aboutrss.shtml" class="navbar">RSS <img style="vertical-align:top" src="/gifs/xml2.gif" border="0" width="13" height="13" alt="XML/RSS logo"></a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutalternate.shtml" class="navbar">About Alternates</a>
+    </td></tr>
+
+    <!-- Now load the standard NHC left sidebar menu (bottom) --> 
+    <!-- Load different menus based on page contents -->
+    
+      <!-- Begin standard NHC left sidebar menu bottom -->
+<!-- NOTE: Don't forget to make appropriate changes to ~/blank_page_top.php for these same links. -->
+    <tr>
+    <td class="white" colspan="2"><a name="storminfo"></a>
+      <span class="yellow">Cyclone Forecasts</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/cyclones/" class="navbar">Latest Advisory</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/archive/2014/" class="navbar">Past Advisories</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/audio/" class="navbar">Audio/Podcasts</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutnhcprod.shtml" class="navbar">About Advisories</a>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="tafb"></a>
+      <span class="yellow">Marine Forecasts</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/marine/" class="navbar">Atlantic &amp; E Pacific</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/marine/grids.php" class="navbar">Gridded Marine</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/abouttafbprod.shtml" class="navbar">About Marine</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="history"></a>
+      <span class="yellow">Tools &amp; Data</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/satellite.php" class="navbar">Satellite</a> | <a href="http://radar.weather.gov/" class="navbar"><b>Radar</b></a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/analysis_tools.php" class="navbar">Analysis Tools</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/recon.php" class="navbar">Aircraft Recon</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/gis/" class="navbar">GIS Datasets</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/data/" class="navbar">Data Archive</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="develop"></a>
+      <span class="yellow">Development</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/experimental/" class="navbar">Experimental</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutresearch.shtml" class="navbar">Research</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/verification/" class="navbar">Forecast Accuracy</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="awareness"></a>
+      <span class="yellow">Outreach &amp; Education</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/prepare/" class="navbar">Prepare</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/surge/" class="navbar">Storm Surge</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/climo/" class="navbar">About Cyclones</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutnames.shtml" class="navbar">Cyclone Names</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutsshws.php" class="navbar">Wind Scale</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/dcmi.shtml" class="navbar">Most Extreme</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutmodels.shtml" class="navbar">Forecast Models</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/breakpoints/" class="navbar">Breakpoints</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/outreach/" class="navbar">Resources</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutgloss.shtml" class="navbar">Glossary</a> | <a href="/acronyms.shtml" class="navbar">Acronyms</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/faq.shtml" class="navbar">Frequent Questions</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="about"></a>
+      <span class="yellow">Our Organization</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutintro.shtml" class="navbar">About NHC</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/mission.shtml" class="navbar">Mission &amp; Vision</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutstaff.shtml" class="navbar">Staff</a> | <a href="/qa/" class="navbar">Q&amp;A</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="/aboutvisitor.shtml" class="navbar">Visitors</a> | <a href="/nhctour.shtml" class="navbar">Virtual Tour</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="http://www.aoml.noaa.gov/general/lib/lib1/nhclib/" class="navbar">Library Branch</a><br>
+      &nbsp;&nbsp;&nbsp;<a href="http://www.ncep.noaa.gov" class="navbar">NCEP</a> | <a href="http://www.ncep.noaa.gov/newsletter/" class="navbar">Newsletter</a><br>
+    </td>
+    </tr>
+
+    <tr>
+    <td class="white" colspan="2"><a name="contact"></a>
+      <span class="yellow">Contact Us</span><br>
+      &nbsp;&nbsp;&nbsp;<a href="/contact.shtml" class="navbar">Comments</a><br>
+      <div align="center">
+        <a href="/govexit.shtml?http://www.facebook.com/NWSNHC"><img src="/graphics/f_logo.png" alt="Follow the National Hurricane Center on Facebook" width="50" height="50" style="border:0px; margin-right:1px;" ></a>
+        <a href="/twitter.php"><img src="/graphics/twitter_logo.png" alt="Follow the National Hurricane Center on Twitter" height="50" width="50" style="border:0px; margin-left:1px;" /></a>
+        <br>
+        <a href="/govexit.shtml?http://www.youtube.com/user/NWSNHC"><img src="/graphics/youtube_logo.png" alt="Subscribe the National Hurricane Center on YouTube" height="28" width="40" style="border:0px; margin-bottom:10px;margin-top:5px;margin-right:9px;"></a>
+        <a href="/govexit.shtml?http://noaanhc.wordpress.com/"><img src="/graphics/w_logo.png" alt="Read the National Hurricane Center Inside the Eye blog on WordPress" height="32" width="32" style="border:0px; margin-left:5px; margin-bottom:10px; margin-right:10px;"></a>
+      </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td align="center" colspan="2">
+      <a href="http://www.usa.gov/"><img src="/graphics/usagov_logo_color_110w_30h.gif" alt="FirstGov.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a>
+    </td>
+    </tr>
+
+    <tr>
+    <td align="center" colspan="2">
+    &nbsp;
+    </td>
+    </tr>
+
+    <tr>
+    <td align="center" colspan="2">
+    &nbsp;
+    </td>
+    </tr>
+
+  </tbody>
+</table>
+<!-- End NHC standard left sidebar menu bottom -->
+
+    
+
+    
+    <!-- Mark the beginning of page contents (append #contents after the URL) -->
+    <td valign="top" style="text-align:center; padding-left:10px; margin-left:auto; margin-right:auto;"> <!-- was 540 -->
+     <a name="contents"></a><br>
+
+<!-- Begin main body -->
+
+<!-- Breadcrumb section (small table at end of each page's contents) -->
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tbody>
+  <tr>
+  <td align="left">
+    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+      <tbody>
+      <tr>
+      <td>
+
+      <!-- START OF CONTENT -->
+
+      <!-- BEGIN SPECIAL NOTICE SECTION -->
+      <!-- The following is special notice that will appear on all pages as a headline -->
+      <!-- Used during a problem on the website...creates a banner on all pages. -->
+
+      <!--
+UNCOMMENT THIS AS APPROPRIATE
+
+<span style="color:#FF0000; font-weight: bold; font-size:13">The NHC website is in backup mode. Some information may not be available.</span><br><br>
+-->
+
+
+      <!-- END SPECIAL NOTICE SECTION -->
+
+
+      
+      <h2 align="center" style="width: 100%;">Offshore Waters Forecast (Caribbean/SW Atlantic)</h2>
+      <hr noshade width="100%" align="left">
+      
+      
+
+
+<!-- THIS FILE CREATED BY HALO -->
+<pre>
+
+000
+FZNT23 KNHC 041516
+OFFNT3
+
+OFFSHORE WATERS FORECAST FOR THE SW AND TROPICAL N ATLANTIC AND
+CARIBBEAN SEA
+NWS NATIONAL HURRICANE CENTER MIAMI FL
+1016 AM EST WED MAR 4 2015
+
+OFFSHORE WATERS FORECAST FOR THE TROPICAL N ATLANTIC FROM 07N TO
+22N BETWEEN 55W AND 64W...THE SW N ATLANTIC S OF 31N W OF 65W
+INCLUDING BAHAMAS...AND THE CARIBBEAN SEA.
+
+SEAS GIVEN AS SIGNIFICANT WAVE HEIGHT...WHICH IS THE AVERAGE
+HEIGHT OF THE HIGHEST 1/3 OF THE WAVES. INDIVIDUAL WAVES MAY BE
+MORE THAN TWICE THE SIGNIFICANT WAVE HEIGHT.
+
+AMZ001-050330-
+SYNOPSIS FOR CARIBBEAN SEA AND TROPICAL N ATLANTIC FROM 07N TO
+19N BETWEEN 55W AND 64W
+1016 AM EST WED MAR 4 2015
+
+.SYNOPSIS...PERSISTENT STRONG RIDGING N OF THE AREA WILL ALLOW
+WINDS TO PULSE TO GALE FORCE OFF THE COAST OF COLOMBIA DURING
+THE OVERNIGHT HOURS THROUGH SUN NIGHT. FRESH TO STRONG TRADE
+WINDS WITH ASSOCIATED SWELL WILL PERSIST OVER THE TROPICAL N
+ATLC THROUGH SAT. 
+
+$$
+
+AMZ011-050330-
+CARIBBEAN N OF 18N W OF 85W INCLUDING YUCATAN BASIN-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E TO SE WINDS 15 TO 20 KT. SEAS 4 TO 5 FT. 
+.TONIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 4 TO 5 FT. 
+.THU...E TO SE WINDS 15 TO 20 KT. SEAS 4 TO 6 FT. 
+.THU NIGHT...E WINDS 10 TO 15 KT. SEAS 4 TO 5 FT. 
+.FRI...NE TO E WINDS 10 TO 15 KT. SEAS 5 FT. 
+.FRI NIGHT...NE WINDS 10 TO 15 KT...INCREASING TO 15 TO 20 KT
+LATE. SEAS 4 TO 6 FT. 
+.SAT...NE WINDS 15 TO 20 KT...DIMINISHING TO 10 TO 15 KT
+LATE. SEAS 4 TO 6 FT. 
+.SAT NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 4 TO 5 FT. 
+.SUN...E WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+.SUN NIGHT...E TO SE WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+
+$$
+
+AMZ013-050330-
+CARIBBEAN N OF 18N BETWEEN 76W AND 85W INCLUDING CAYMAN BASIN-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 15 TO 20 KT. SEAS 4 TO 6 FT. 
+.TONIGHT...E TO SE WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.THU...E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.THU NIGHT...E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.FRI...NE TO E WINDS 10 TO 15 KT. SEAS 4 TO 5 FT. 
+.FRI NIGHT...E WINDS 5 TO 10 KT...SHIFTING TO NE 10 TO 15 KT
+LATE. SEAS 3 TO 5 FT. 
+.SAT...NE TO E WINDS 10 TO 15 KT. SEAS 4 TO 5 FT. 
+.SAT NIGHT...E WINDS 5 TO 10 KT...SHIFTING TO NE TO E 10 TO
+15 KT LATE. SEAS 3 TO 5 FT. 
+.SUN...E WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+.SUN NIGHT...E WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+
+$$
+
+AMZ015-050330-
+CARIBBEAN APPROACHES TO THE WINDWARD PASSAGE-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.TONIGHT...NE TO E WINDS 15 TO 20 KT...BECOMING E 10 TO 15 KT
+LATE. SEAS 4 TO 6 FT. 
+.THU...E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.THU NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.FRI...NE TO E WINDS 10 TO 15 KT...BECOMING E 5 TO 10 KT
+LATE. SEAS 3 TO 5 FT. 
+.FRI NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.SAT...E WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.SAT NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 3 TO 5 FT. 
+.SUN...E WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+.SUN NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+
+$$
+
+AMZ017-050330-
+GULF OF HONDURAS-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E TO SE WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+.TONIGHT...E WINDS 15 TO 20 KT...BECOMING E TO SE 20 TO 25 KT
+LATE. SEAS 4 TO 6 FT. 
+.THU...S OF 17N W OF 87W...E TO SE WINDS 15 TO 20 KT...BECOMING
+E 10 TO 15 KT LATE. ELSEWHERE...E TO SE WINDS 15 TO
+20 KT. SEAS 4 TO 6 FT. 
+.THU NIGHT...S OF 17N W OF 87W...E WINDS 15 TO 20 KT...
+INCREASING TO 20 TO 25 KT LATE. ELSEWHERE...E WINDS
+15 TO 20 KT. SEAS 4 TO 6 FT. 
+.FRI...E WINDS 15 TO 20 KT...BECOMING NE TO E 10 TO 15 KT
+LATE. SEAS 4 TO 6 FT. 
+.FRI NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 3 TO 5 FT. 
+.SAT...NE TO E WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+.SAT NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+.SUN...E WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+.SUN NIGHT...E WINDS 10 TO 15 KT. SEAS 3 TO 4 FT. 
+
+$$
+
+AMZ019-050330-
+CARIBBEAN FROM 15N TO 18N BETWEEN 80W AND 85W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 15 TO 20 KT. SEAS 4 TO 6 FT. 
+.TONIGHT...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.THU...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.THU NIGHT...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.FRI...E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.FRI NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SAT...NE TO E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SAT NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SUN...NE TO E WINDS 15 TO 20 KT...BECOMING E 20 TO 25 KT
+LATE. SEAS 5 TO 7 FT. 
+.SUN NIGHT...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+
+$$
+
+AMZ021-050330-
+CARIBBEAN FROM 15N TO 18N BETWEEN 72W AND 80W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+.TONIGHT...E WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+.THU...E WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+.THU NIGHT...E WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+.FRI...E WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+.FRI NIGHT...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SAT...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SAT NIGHT...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SUN...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SUN NIGHT...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+
+$$
+
+AMZ023-050330-
+CARIBBEAN N OF 15N BETWEEN 64W AND 72W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 20 TO 25 KT. SEAS 8 TO 10 FT. 
+.TONIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 8 TO 10 FT. 
+.THU...E WINDS 20 TO 25 KT. SEAS 8 TO 10 FT. 
+.THU NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 8 TO 9 FT. 
+.FRI...E WINDS 20 TO 25 KT. SEAS 7 TO 9 FT. 
+.FRI NIGHT...E WINDS 20 TO 25 KT. SEAS 7 TO 9 FT. 
+.SAT...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SAT NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 7 TO 9 FT. 
+.SUN...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.SUN NIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 8 FT. 
+
+$$
+
+AMZ025-050330-
+OFFSHORE WATERS LEEWARD ISLANDS-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 20 KT. SEAS 6 TO 9 FT. 
+.TONIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.THU...NE TO E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.THU NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.FRI...E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 6 TO 9 FT. 
+.FRI NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 6 TO 8 FT. 
+.SAT...E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.SAT NIGHT...NE TO E WINDS 20 KT. SEAS 6 TO 8 FT. 
+.SUN...E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.SUN NIGHT...E WINDS 20 KT. SEAS 6 TO 8 FT. 
+
+$$
+
+AMZ027-050330-
+TROPICAL N ATLANTIC FROM 15N TO 19N BETWEEN 55W AND 60W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 15 TO 20 KT. SEAS 8 TO 9 FT. 
+.TONIGHT...NE TO E WINDS 20 KT. SEAS 8 TO 9 FT. 
+.THU...NE TO E WINDS 20 TO 25 KT. SEAS 8 TO 9 FT. 
+.THU NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 9 FT. 
+.FRI...NE TO E WINDS 20 KT. SEAS 8 TO 9 FT. 
+.FRI NIGHT...NE TO E WINDS 20 KT. SEAS 8 TO 9 FT. 
+.SAT...NE TO E WINDS 20 KT. SEAS 7 TO 8 FT. 
+.SAT NIGHT...NE TO E WINDS 20 KT. SEAS 7 TO 8 FT. 
+.SUN...E WINDS 20 KT. SEAS 7 TO 8 FT. 
+.SUN NIGHT...E WINDS 20 KT. SEAS 7 TO 8 FT. 
+
+$$
+
+AMZ029-050330-
+W CENTRAL CARIBBEAN FROM 11N TO 15N W OF 80W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 15 TO 20 KT. SEAS 4 TO 6 FT
+WITHIN 60 NM OF COAST OF NICARAGUA...AND 7 TO 10 FT ELSEWHERE. 
+.TONIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 4 TO 6 FT WITHIN
+60 NM OF COAST OF NICARAGUA...AND 7 TO 10 FT ELSEWHERE. 
+.THU...E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 4 TO 6 FT WITHIN 60 NM OF COAST OF NICARAGUA...
+AND 8 TO 11 FT ELSEWHERE. SCATTERED SHOWERS AND ISOLATED TSTMS. 
+.THU NIGHT...NE TO E WINDS 15 TO 20 KT...INCREASING TO 20 TO
+25 KT LATE. SEAS 5 TO 7 FT WITHIN 60 NM OF COAST OF
+NICARAGUA...AND 8 TO 11 FT ELSEWHERE. SCATTERED SHOWERS AND
+ISOLATED TSTMS. 
+.FRI...NE TO E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 8 TO 11 FT. 
+.FRI NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 10 FT. 
+.SAT...NE TO E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 7 TO 10 FT. 
+.SAT NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 10 FT. 
+.SUN...NE TO E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.SUN NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+
+$$
+
+AMZ031-050330-
+CARIBBEAN FROM 11N TO 15N BETWEEN 72W AND 80W INCLUDING COLOMBIA
+BASIN-
+1016 AM EST WED MAR 4 2015
+
+...GALE WARNING...
+...GALE CONDITIONS POSSIBLE...
+
+.TODAY...NE TO E WINDS 20 TO 30 KT. SEAS 9 TO 13 FT IN NE TO E
+SWELL.
+.TONIGHT...NE TO E WINDS 25 TO 35 KT WITHIN 90 NM OF COAST OF
+COLOMBIA...AND NE TO E 20 TO 30 KT ELSEWHERE. SEAS 10 TO 14 FT IN
+NE TO E SWELL.
+.THU...E WINDS 25 TO 30 KT. SEAS 11 TO 15 FT. 
+.THU NIGHT...NE TO E WINDS 30 TO 35 KT WITHIN 90 NM OF COAST OF
+COLOMBIA. ELSEWHERE...NE TO E WINDS 25 TO 30 KT. SEAS 10 TO 15 FT.
+.FRI...NE TO E WINDS 25 TO 30 KT...BECOMING 20 TO 30 KT
+LATE. SEAS 10 TO 15 FT. 
+.FRI NIGHT...NE TO E WINDS 30 TO 35 KT WITHIN 90 NM OF COAST OF
+COLOMBIA. ELSEWHERE...NE TO E WINDS 20 TO 30 KT. SEAS 10 TO 14 FT.
+.SAT...NE TO E WINDS 25 TO 30 KT...BECOMING 20 TO 30 KT
+LATE. SEAS 10 TO 15 FT. 
+.SAT NIGHT...NE TO E WINDS 30 TO 35 KT WITHIN 90 NM OF COAST OF
+COLOMBIA. ELSEWHERE...NE TO E WINDS 25 TO 30 KT. SEAS 10 TO 14 FT. 
+.SUN...NE TO E WINDS 25 TO 30 KT. SEAS 10 TO 15 FT. 
+.SUN NIGHT...NE TO E WINDS 30 TO 35 KT WITHIN 90 NM OF COAST OF
+COLOMBIA. ELSEWHERE...NE TO E WINDS 25 TO 30 KT. SEAS 10 TO 13 FT. 
+
+
+$$
+
+AMZ033-050330-
+CARIBBEAN S OF 15N BETWEEN 64W AND 72W INCLUDING VENEZUELA BASIN-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. SCATTERED
+SHOWERS AND ISOLATED TSTMS. 
+.TONIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.THU...E WINDS 20 TO 25 KT. SEAS 7 TO 10 FT. 
+.THU NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 7 TO 9 FT. 
+.FRI...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.FRI NIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.SAT...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.SAT NIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.SUN...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.SUN NIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+
+$$
+
+AMZ035-050330-
+OFFSHORE WATERS WINDWARD ISLANDS INCLUDING TRINIDAD AND TOBAGO-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.TONIGHT...NE TO E WINDS 15 TO 20 KT...INCREASING TO 20 TO 25 KT
+LATE. SEAS 6 TO 9 FT. 
+.THU...NE TO E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 6 TO 9 FT. 
+.THU NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 9 FT. 
+.FRI...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 9 FT. 
+.FRI NIGHT...NE TO E WINDS 20 TO 25 KT. SEAS 6 TO 8 FT. 
+.SAT...NE TO E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 6 TO 8 FT. 
+.SAT NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.SUN...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.SUN NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+
+$$
+
+AMZ037-050330-
+TROPICAL N ATLANTIC FROM 07N TO 15N BETWEEN 55W AND 65W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT.
+ISOLATED TSTMS. 
+.TONIGHT...NE TO E WINDS 20 KT. SEAS 7 TO 9 FT. ISOLATED TSTMS. 
+.THU...NE TO E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 7 TO 9 FT. 
+.THU NIGHT...NE TO E WINDS 20 KT. SEAS 7 TO 9 FT. 
+.FRI...NE TO E WINDS 15 TO 20 KT. SEAS 8 TO 9 FT. 
+.FRI NIGHT...NE TO E WINDS 20 KT. SEAS 8 TO 9 FT. 
+.SAT...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 9 FT. 
+.SAT NIGHT...NE TO E WINDS 20 KT. SEAS 8 FT.
+.SUN...NE TO E WINDS 20 KT. SEAS 8 FT. 
+.SUN NIGHT...E WINDS 20 KT. SEAS 7 TO 9 FT. 
+
+$$
+
+AMZ039-050330-
+SW CARIBBEAN S OF 11N INCLUDING APPROACHES TO PANAMA CANAL-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 20 TO 25 KT...BECOMING NE 15 TO
+20 KT LATE. SEAS 8 TO 11 FT. 
+.TONIGHT...S OF 10N...N WINDS 15 TO 20 KT...BECOMING N TO NE
+10 TO 15 KT LATE. ELSEWHERE...NE WINDS 20 TO 25 KT.
+SEAS 8 TO 11 FT. 
+.THU...S OF 10N...N TO NE WINDS 10 TO 15 KT...BECOMING N 5 TO
+10 KT LATE. ELSEWHERE...NE TO E WINDS 20 TO 25 KT...
+DIMINISHING TO 15 TO 20 KT LATE. SEAS 8 TO 11 FT. 
+.THU NIGHT...S OF 10N...N TO NE WINDS 15 TO 20 KT. ELSEWHERE...
+NE WINDS 20 TO 25 KT...BECOMING NE TO E 25 TO 30 KT 
+LATE. SEAS 7 TO 10 FT S OF 10N...AND 8 TO 13 FT ELSEWHERE. 
+.FRI...NE WINDS 20 TO 25 KT. SEAS 8 TO 13 FT. 
+.FRI NIGHT...NE WINDS 20 TO 25 KT. SEAS 8 TO 12 FT. 
+.SAT...NE WINDS 20 TO 25 KT. SEAS 8 TO 13 FT. 
+.SAT NIGHT...NE WINDS 20 TO 25 KT. SEAS 8 TO 12 FT. 
+.SUN...NE WINDS 20 TO 25 KT. SEAS 8 TO 12 FT. 
+.SUN NIGHT...NE WINDS 20 TO 25 KT. SEAS 8 TO 11 FT. 
+
+$$
+
+AMZ101-050330-
+SYNOPSIS FOR THE SW N ATLANTIC INCLUDING THE BAHAMAS
+1016 AM EST WED MAR 4 2015
+
+.SYNOPSIS...HIGH PRES WILL PREVAIL OVER THE FORECAST AREA
+THROUGH THU. A COLD FRONT WILL MOVE OFF THE SE GEORGIA COAST THU
+NIGHT AND EXTEND FROM NEAR BERMUDA TO CENTRAL FLORIDA FRI. THE
+SOUTHERN PORTION OF THE FRONT WILL STALL AND DISSIPATE OVER THE
+WESTERN WATERS THROUGH SAT WHILE TO NORTHERN PART OF THE FRONT
+SHIFTS E OF THE AREA LATE SAT. 
+
+$$
+
+AMZ111-050330-
+ATLANTIC FROM 27N TO 31N W OF 77W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...S WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.TONIGHT...S WINDS 15 TO 20 KT. SEAS 5 TO 6 FT. 
+.THU...S WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.THU NIGHT...N OF 29N W OF 79W...S TO SW WINDS 10 TO 15 KT...
+BECOMING NW TO N 15 TO 20 KT LATE. ELSEWHERE...S TO SW
+WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.FRI...N TO NE WINDS 15 TO 20 KT. SEAS 6 TO 9 FT. 
+.FRI NIGHT...NE WINDS 15 TO 20 KT. SEAS 7 TO 10 FT. 
+.SAT...NE WINDS 15 TO 20 KT...BECOMING NE TO E 10 TO 15 KT
+LATE. SEAS 6 TO 7 FT. 
+.SAT NIGHT...NE TO E WINDS 15 TO 20 KT...BECOMING E 10 TO 15 KT
+LATE. SEAS 5 TO 6 FT. 
+.SUN...E TO SE WINDS 10 TO 15 KT...SHIFTING TO SE TO S
+LATE. SEAS 4 TO 5 FT. 
+.SUN NIGHT...SW WINDS 10 TO 15 KT. SEAS 4 FT. 
+
+$$
+
+AMZ113-050330-
+ATLANTIC FROM 27N TO 31N BETWEEN 70W AND 77W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...SE TO S WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.TONIGHT...SE TO S WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.THU...S WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.THU NIGHT...S WINDS 10 TO 15 KT. SEAS 4 TO 5 FT. 
+.FRI...S WINDS 5 TO 10 KT. SEAS 5 TO 7 FT. 
+.FRI NIGHT...S TO SW WINDS 5 TO 10 KT...INCREASING TO 10 TO
+15 KT LATE. SEAS 6 TO 9 FT. 
+.SAT...W WINDS 10 TO 15 KT...SHIFTING TO N TO NE 
+LATE. SEAS 6 TO 7 FT. 
+.SAT NIGHT...NE TO E WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.SUN...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.SUN NIGHT...SE WINDS 10 TO 15 KT...BECOMING S 15 TO 20 KT 
+LATE. SEAS 4 TO 5 FT. 
+
+$$
+
+AMZ115-050330-
+ATLANTIC FROM 27N TO 31N BETWEEN 65W AND 70W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E TO SE WINDS 10 TO 15 KT. SEAS 6 TO 7 FT. 
+.TONIGHT...SE WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.THU...SE TO S WINDS 10 KT. SEAS 5 TO 6 FT.
+.THU NIGHT...S WINDS 5 TO 10 KT. SEAS 4 TO 5 FT. 
+.FRI...S WINDS 5 TO 10 KT. SEAS 4 TO 5 FT. 
+.FRI NIGHT...S WINDS 5 TO 10 KT. SEAS 5 TO 7 FT. 
+.SAT...SW WINDS 10 TO 15 KT. SEAS 6 TO 8 FT. 
+.SAT NIGHT...W TO NW WINDS 5 TO 10 KT...SHIFTING TO N TO NE
+LATE. SEAS 5 TO 6 FT. 
+.SUN...E WINDS 5 TO 10 KT. SEAS 5 TO 6 FT. 
+.SUN NIGHT...E TO SE WINDS 10 TO 15 KT...SHIFTING TO SE TO S
+LATE. SEAS 4 TO 5 FT. 
+
+$$
+
+AMZ117-050330-
+BAHAMAS INCLUDING CAY SAL BANK-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT ATLC
+EXPOSURES...AND 3 TO 5 FT ELSEWHERE. 
+.TONIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT ATLC
+EXPOSURES...AND 3 TO 5 FT ELSEWHERE. 
+.THU...E TO SE WINDS 15 TO 20 KT. SEAS 4 TO 6 FT. 
+.THU NIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 3 TO 5 FT. 
+.FRI...E TO SE WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+.FRI NIGHT...E WINDS 10 TO 15 KT. SEAS 3 TO 5 FT. 
+.SAT...E TO SE WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.SAT NIGHT...E WINDS 10 TO 15 KT...INCREASING TO 15 TO 20 KT
+LATE. SEAS 3 TO 5 FT. 
+.SUN...E TO SE WINDS 15 TO 20 KT. SEAS 3 TO 5 FT. 
+.SUN NIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 3 TO 4 FT. 
+
+$$
+
+AMZ119-050330-
+ATLANTIC FROM 22N TO 27N E OF BAHAMAS TO 70W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.TONIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.THU...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.THU NIGHT...SE WINDS 10 TO 15 KT N OF 25N...AND E TO SE 15 TO
+20 KT ELSEWHERE. SEAS 5 TO 7 FT. 
+.FRI...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.FRI NIGHT...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.SAT...E TO SE WINDS 10 TO 15 KT. SEAS 6 TO 7 FT. 
+.SAT NIGHT...E WINDS 10 TO 15 KT. SEAS 6 TO 7 FT. 
+.SUN...E TO SE WINDS 15 TO 20 KT...DIMINISHING TO 10 TO 15 KT
+LATE. SEAS 5 TO 7 FT. 
+.SUN NIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 4 TO 6 FT. 
+
+$$
+
+AMZ121-050330-
+ATLANTIC FROM 22N TO 27N BETWEEN 65W AND 70W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 15 TO 20 KT...DIMINISHING TO 10 TO
+15 KT LATE. SEAS 6 TO 7 FT. 
+.TONIGHT...E WINDS 10 TO 15 KT...INCREASING TO 15 TO 20 KT 
+LATE. SEAS 7 FT. 
+.THU...E TO SE WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.THU NIGHT...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.FRI...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 7 FT. 
+.FRI NIGHT...E TO SE WINDS 10 TO 15 KT. SEAS 4 TO 6 FT. 
+.SAT...E TO SE WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.SAT NIGHT...E WINDS 10 TO 15 KT. SEAS 6 TO 7 FT. 
+.SUN...E WINDS 10 TO 15 KT. SEAS 5 TO 6 FT. 
+.SUN NIGHT...E TO SE WINDS 15 TO 20 KT. SEAS 5 TO 6 FT. 
+
+$$
+
+AMZ123-050330-
+ATLANTIC S OF 22N W OF 70W INCLUDING APPROACHES TO THE WINDWARD
+PASSAGE-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 20 KT. SEAS 6 TO 8 FT. 
+.TONIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 9 FT. 
+.THU...E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.THU NIGHT...E WINDS 20 TO 25 KT. SEAS 6 TO 8 FT. 
+.FRI...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.FRI NIGHT...E WINDS 20 TO 25 KT...DIMINISHING TO 15 TO 20 KT
+LATE. SEAS 6 TO 8 FT. 
+.SAT...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SAT NIGHT...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SUN...E WINDS 15 TO 20 KT. SEAS 5 TO 7 FT. 
+.SUN NIGHT...E WINDS 20 TO 25 KT. SEAS 5 TO 7 FT. 
+
+$$
+
+AMZ125-050330-
+ATLANTIC S OF 22N BETWEEN 65W AND 70W INCLUDING PUERTO RICO
+TRENCH-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.TONIGHT...E WINDS 20 KT. SEAS 7 TO 8 FT. 
+.THU...E WINDS 20 KT. SEAS 8 FT. 
+.THU NIGHT...E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.FRI...E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.FRI NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SAT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SAT NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SUN...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SUN NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+
+$$
+
+AMZ127-050330-
+ATLANTIC FROM 19N TO 22N BETWEEN 55W AND 65W-
+1016 AM EST WED MAR 4 2015
+
+.TODAY...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.TONIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.THU...NE TO E WINDS 20 KT. SEAS 8 FT. 
+.THU NIGHT...E WINDS 20 KT. SEAS 8 TO 9 FT. 
+.FRI...E WINDS 15 TO 20 KT. SEAS 7 TO 8 FT. 
+.FRI NIGHT...NE TO E WINDS 15 TO 20 KT. SEAS 6 TO 8 FT. 
+.SAT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SAT NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SUN...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+.SUN NIGHT...E WINDS 15 TO 20 KT. SEAS 6 TO 7 FT. 
+
+$$
+
+FORECASTER DGS
+
+</pre>
+
+
+
+      <!-- END OF CONTENT -->
+
+      <br><hr width="100%" align="left">
+      </td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="left">
+      <tbody>
+        <tr align="center">
+          <td>Quick Navigation Links:<br>
+            <a href="/cyclones/">Tropical Cyclone Forecasts</a> &nbsp;-&nbsp; <a href="/marine/">Tropical Marine Forecasts</a> &nbsp;-&nbsp; <a href="/data/">Data Archive</a><br>
+            <a href="/outreach/">Outreach</a> &nbsp;-&nbsp; <a href="/prepare/">Prepare</a> &nbsp;-&nbsp; <a href="/climo/">About Cyclones</a> &nbsp;-&nbsp; <a href="/aboutintro.shtml">About NHC</a> &nbsp;-&nbsp; <a href="/contact.shtml">Contact Us</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </tr>
+    <tr>
+     <td>
+     </td>
+</tr>
+</tbody>
+</table>
+    
+<!-- End of main body -->
+
+      <table cellSpacing="0" cellPadding="0" width="100%" border="0" align="left">
+        <tbody>
+
+        <!-- Now load the NHC standard footer -->
+        <!-- Begin NHC standard footer -->
+  <tr>
+    <td colspan="3"><hr width="100%" align="left"></td>
+  </tr>
+    <tr valign="top">
+    <td class="gray">
+      <a href="http://www.noaa.gov/"><span class="gray">NOAA/</span></a>
+      <a href="http://www.nws.noaa.gov/"><span class="gray">National Weather Service</span></a><br>
+      <a href="http://www.ncep.noaa.gov/"><span class="gray">National Centers for Environmental Prediction</span></a><br>
+      National Hurricane Center<br>
+      11691 SW 17th Street<br>
+      Miami, Florida 33165 USA<br>
+      <a href="/contact.shtml"><span class="gray">nhcwebmaster@noaa.gov</span></a>
+    </td>
+    <td><a href="http://www.weather.gov/disclaimer.php"><span class="gray">Disclaimer</span></a><br>
+      <a href="http://www.weather.gov/credits.php"><span class="gray">Credits</span></a><br>
+      <a href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html"><span class="gray">Information Quality</span></a><br>
+      <a href="http://www.weather.gov/glossary/"><span class="gray">Glossary</span></a><br>
+    </td>
+    <td align="right"><a href="http://www.weather.gov/privacy.php"><span class="gray">Privacy Policy</span></a><br>
+      <a href="http://www.osec.doc.gov/omo/FOIA/FOIAWebsite.htm"><span class="gray">Freedom of Information Act (FOIA)</span></a><br>
+      <a href="http://www.weather.gov/admin.php"><span class="gray">About Us</span></a><br>
+      <a href="http://www.weather.gov/careers.php"><span class="gray">Career Opportunities</span></a><br>
+    </td>
+    </tr>
+<!-- End NHC standard footer -->
+
+        <tr valign="top">
+          <td class="gray" colspan="3">
+            Page last modified: Wednesday, 04-Mar-2015 15:16:35 UTC
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+ 
+
+
+
+
